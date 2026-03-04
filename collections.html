@@ -4,6 +4,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Collections — Memory Crystal</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zalando+Sans:wght@400;500;600;700&display=swap" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -18,13 +21,14 @@
         <div class="nav-logo-box"></div>
         <span class="nav-logo-text">Memory Crystal</span>
       </a>
+      <button class="nav-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
       <ul class="nav-links">
         <li><a href="technology.html">Technology</a></li>
         <li><a href="collections.html" class="active">Collections</a></li>
         <li><a href="services.html">Services</a></li>
         <li><a href="trust.html">Trust</a></li>
         <li><a href="faq.html">FAQ</a></li>
-        <li><a href="blog.html">Blog</a></li>
+        <li><a href="news.html">News</a></li>
       </ul>
       <div class="nav-actions">
         <button class="btn btn-ghost btn-sm">Schedule Demo</button>
@@ -259,7 +263,7 @@
       <div>
         <p class="footer-col-title">Resources</p>
         <ul class="footer-links">
-          <li><a href="blog.html">Blog</a></li>
+          <li><a href="news.html">News</a></li>
           <li><a href="collections.html">Collections</a></li>
           <li><a href="faq.html">FAQ</a></li>
           <li><a href="#">White Papers</a></li>
@@ -286,5 +290,10 @@
   </div>
 </footer>
 
+<script>
+document.querySelector(".nav-toggle").addEventListener("click", function() {
+  document.querySelector(".nav-links").classList.toggle("open");
+});
+</script>
 </body>
 </html>
