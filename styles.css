@@ -115,6 +115,18 @@ h1, h2, h3, h4, h5, h6,
 .inverted .case-type { color: #888; }
 .inverted + .divider { border-top-color: transparent; }
 .inverted .divider { border-top-color: #444; }
+.inverted .faq-item { border-bottom-color: #333; }
+.inverted .faq-q { color: var(--white); }
+.inverted .faq-a { color: #bbb; }
+.inverted .gallery-card { background: #333; border-color: #444; }
+.inverted .gallery-name { color: var(--white); }
+.inverted .gallery-meta { color: #888; }
+.inverted .gallery-sub { color: #bbb; }
+.inverted .filter-tab { background: #333; color: #bbb; border-color: #444; }
+.inverted .filter-tab.active { background: var(--white); color: var(--accent); }
+.inverted .stat-num { color: var(--white); }
+.inverted .stat-label { color: #888; }
+.inverted .stats-grid > div { border-color: #333; }
 
 /* ── PLACEHOLDER ── */
 .img-ph {
